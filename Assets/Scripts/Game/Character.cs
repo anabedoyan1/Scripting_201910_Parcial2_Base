@@ -5,6 +5,9 @@
 public abstract class Character : MonoBehaviour
 {
     [SerializeField]
+    private EnemyType myType;
+
+    [SerializeField]
     private float maxHP;
 
     [SerializeField]
@@ -25,6 +28,8 @@ public abstract class Character : MonoBehaviour
     }
 
     public float ShootForce { get { return shootForce; } }
+
+    public EnemyType MyType { get => myType; protected set => myType = value; }
 
     public void ModifyHP(float delta)
     {

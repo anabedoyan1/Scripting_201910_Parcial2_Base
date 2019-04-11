@@ -5,6 +5,9 @@ public abstract class State : MonoBehaviour
     [SerializeField]
     private State nextState;
 
+    protected int warningwarningDistance = 5;
+    protected int actDistance = 3;
+
     public abstract void Execute();
 
     private void SwitchToNextState()

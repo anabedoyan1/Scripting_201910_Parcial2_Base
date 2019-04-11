@@ -50,6 +50,11 @@ public class Bullet : MonoBehaviour
             }
         }
 
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+
+        }
+
         if (collision.gameObject.Equals(instigator.gameObject))
         {
             Destroy(gameObject);
