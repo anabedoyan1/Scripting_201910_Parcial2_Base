@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -127,6 +127,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fadddc63520db414bbc9126cbf4743ad, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fadddc63520db414bbc9126cbf4743ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -192,6 +196,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 64, y: 1, z: 64}
   m_Center: {x: 0, y: -0.5000052, z: 0}
+--- !u!114 &47280891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47280889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b99db2fbc7f744b48aa1886db0210f39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  factory: {fileID: 612129133}
+  actor:
+  - {fileID: 9205434777871308690, guid: 3a7066fd5442749489947bcdd01e54f5, type: 3}
+  - {fileID: 9205434777871308690, guid: 8af39b11e5e183543ad32db52cc7262e, type: 3}
+  - {fileID: 9205434777871308690, guid: 55601d53484079f4c930c6b558b0484d, type: 3}
 --- !u!1 &49798548
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,6 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82830ec94bb5e3845a3f62a054453834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myType: 0
   maxHP: 500
   bullet: {fileID: 7219316403448921455, guid: 9f6f3057794932441806f0821b0b4408, type: 3}
   shootForce: 20
@@ -371,6 +393,35 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 735693278}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &612129133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612129132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a40e33a5a0d1d45a3a9fc3fefb55b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsfac:
+  - {fileID: 6349166343564486779, guid: 3a7066fd5442749489947bcdd01e54f5, type: 3}
+  - {fileID: 6349166343564486779, guid: 8af39b11e5e183543ad32db52cc7262e, type: 3}
+  - {fileID: 6349166343564486779, guid: 55601d53484079f4c930c6b558b0484d, type: 3}
+--- !u!114 &612129134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612129132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7355a5c169c6a30419016e70ab919529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cantidad: 3
 --- !u!64 &612129136
 MeshCollider:
   m_ObjectHideFlags: 0
