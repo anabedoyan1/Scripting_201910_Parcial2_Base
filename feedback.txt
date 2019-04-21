@@ -1,0 +1,11 @@
+feedback
+
+Componente Práctico (0.2/ 5.0)
+* Hay un script de pool para balas, pero no hay un objeto en escena que haga uso de él; en consecuencia no se cumple que las balas no se creen y destruyan constantemente (0.2 / 0.4)
+* Hay un script de factory, supongo, para los enemigos, y un script de pool que podría extenderse para los enemigos, pero no hay ningún objeto en la escena que haga uso de ellos; en consecuencia no se cumple que los enemigos no se creen y destruyan constantemente (0.2 / 0.4)
+* No hay implementación de los estados Idle, Warning, Act de los AI (0.0 / 1.0)
+* No hay implementación de una instanciación limitada de objetos de AI que se restablezca una vez todas las instancias de AI creadas sean destruidas. (0.0 / 0.7)
+* No hay implementación de los nodos del BT solicitados para los AI (0.0 / 1.5)
+* El readme tiene una explicación adecuada de la estrategia de implementación, pero no se soporta con una implementación funcional (0.5 / 1.0)
+
+Total: 0.9/ 5.0
